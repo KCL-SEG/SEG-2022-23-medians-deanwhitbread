@@ -11,12 +11,12 @@ while True:
 
         if len(numbers) % 2 == 1:
             median_index = len(numbers) // 2
-            print(numbers[median_index])
+            print(int(numbers[median_index]))
         else:
             median_index = (len(numbers) - 1) // 2
             arith_mean = (numbers[median_index] + numbers[median_index + 1]) / 2
-            print(arith_mean)
-            
+            print(float(arith_mean))
+
     except ValueError:
         print("Some input could not be converted to a number!")
     else:
