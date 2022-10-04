@@ -1,5 +1,7 @@
 """Median calculator."""
 """ENTER YOUR SOLUTION HERE!"""
+median_index = 0
+median_value = 0;
 
 while True:
     try:
@@ -7,8 +9,6 @@ while True:
         numbers = [float(value) for value in input().split(",")]
 
         numbers.sort()
-        median_index = 0
-        median_value = 0;
 
         if len(numbers) % 2 == 1:
             median_index = len(numbers) // 2
@@ -18,9 +18,9 @@ while True:
             arith_mean = (numbers[median_index] + numbers[median_index + 1]) / 2
             median_value = float(arith_mean)
 
-        return median_value
     except ValueError:
         print("Some input could not be converted to a number!")
     else:
         break
 print(numbers)
+return median_value
