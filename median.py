@@ -11,7 +11,7 @@ while True:
 
         if len(numbers) % 2 == 1:
             median_index = len(numbers) // 2
-            median_value = int(numbers[median_index])
+            median_value = float(numbers[median_index])
         else:
             median_index = (len(numbers) - 1) // 2
             median_value  = float((numbers[median_index] + numbers[median_index + 1]) / 2)
